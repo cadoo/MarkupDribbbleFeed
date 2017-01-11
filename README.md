@@ -1,5 +1,4 @@
-# MarkupDribbbleFeed
-Processwire Dribbble Feed Module
+# Processwire Dribbble Feed Module
 Simple module that displays user's feed from Dribbble.
 
 ## Installation
