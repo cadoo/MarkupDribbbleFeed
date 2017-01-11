@@ -11,3 +11,6 @@ Add module to /site/modules/ and then install. Don't forget to register new app 
 
 ## TODO
 - Include default css style
+
+## Credits
+Made by [Novus Labs](http://nvslbs.com).
