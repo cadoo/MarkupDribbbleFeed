@@ -112,7 +112,8 @@ class MarkupDribbbleFeed extends WireData implements Module {
 
 		if ( ! empty( $dribbble_settings ) ) {
 			$http = new WireHttp();
-			$response = $http->get("https://api.dribbble.com/v1/users/{$dribbble_settings['username']}/shots/?per_page={$dribbble_settings['per_page']}&access_token={$dribbble_settings['access_token']}");
+			$api_url = empty( $dribbble_settings['team_account'] ) ? 'https://api.dribbble.com/v1/users/' : 'https://api.dribbble.com/v1/teams/';
+			$response = $http->get("{$api_url}{$dribbble_settings['username']}/shots/?per_page={$dribbble_settings['per_page']}&access_token={$dribbble_settings['access_token']}");
 			if ( $response !== false ) {
 				$response_json = json_decode( $response );
 				$feed_images = array();

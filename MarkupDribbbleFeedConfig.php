@@ -36,6 +36,13 @@ class MarkupDribbbleFeedConfig extends ModuleConfig {
 				'value' => '12',
 			),
 			array(
+				'name' => 'team_account',
+				'label' => $this->_( 'Team account?' ),
+				'type' => 'checkbox',
+				'required' => false,
+				'value' => 0,
+			),
+			array(
 				'name' => 'cache_enabled',
 				'label' => $this->_( 'Enable Cache' ),
 				'type' => 'checkbox',
