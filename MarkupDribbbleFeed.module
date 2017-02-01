@@ -26,7 +26,7 @@ class MarkupDribbbleFeed extends WireData implements Module {
 			'title' => 'Dribbble Feed',
 
 			// version number
-			'version' => 1,
+			'version' => 2,
 
 			// summary is brief description of what this module is
 			'summary' => 'Shows Dribbble feed from particular user.',
